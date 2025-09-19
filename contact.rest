@@ -1,0 +1,19 @@
+### Test root (Hello World)
+GET http://localhost:3000/
+
+### Get all contacts (local)
+GET http://localhost:3000/contacts
+
+### Get single contact by id (local)
+GET http://localhost:3000/contacts/68cdb671ea447eb3f9779ba7
+
+### --------- Deployed on Render ---------
+
+### Test root on Render
+GET https://cse341-contacts.onrender.com/
+
+### Get all contacts (Render)
+GET https://cse341-contacts.onrender.com/contacts
+
+### Get single contact by id (Render)
+GET https://cse341-contacts.onrender.com/contacts/68cdb671ea447eb3f9779ba7
