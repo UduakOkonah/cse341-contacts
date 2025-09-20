@@ -1,3 +1,5 @@
+### ================== LOCALHOST ==================
+
 ### Test root (Hello World)
 GET http://localhost:3000/
 
@@ -7,13 +9,69 @@ GET http://localhost:3000/contacts
 ### Get single contact by id (local)
 GET http://localhost:3000/contacts/68cdb671ea447eb3f9779ba7
 
-### --------- Deployed on Render ---------
+### Create a new contact (local)
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Uduakobong",
+  "lastName": "Okonah",
+  "email": "uduak@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "2003-10-15"
+}
+
+### Update a contact (local)
+PUT http://localhost:3000/contacts/68cec5c04638c989d8998964
+Content-Type: application/json
+
+{
+  "firstName": "UpdatedFirst",
+  "lastName": "UpdatedLast",
+  "email": "updated@example.com",
+  "favoriteColor": "Green",
+  "birthday": "2000-01-01"
+}
+
+### Delete a contact (local)
+DELETE http://localhost:3000/contacts/68cec5c04638c989d8998964
+
+
+
+### ================== RENDER DEPLOYMENT ==================
 
 ### Test root on Render
-GET https://cse341-contacts.onrender.com/
+GET https://cse341-contacts-7w4p.onrender.com/
 
 ### Get all contacts (Render)
-GET https://cse341-contacts.onrender.com/contacts
+GET https://cse341-contacts-7w4p.onrender.com/contacts
 
 ### Get single contact by id (Render)
-GET https://cse341-contacts.onrender.com/contacts/68cdb671ea447eb3f9779ba7
+GET https://cse341-contacts-7w4p.onrender.com/contacts/68cdb671ea447eb3f9779ba7
+
+### Create a new contact (Render)
+POST https://cse341-contacts-7w4p.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Uduakobong",
+  "lastName": "Okonah",
+  "email": "uduak@example.com",
+  "favoriteColor": "Blue",
+  "birthday": "2003-10-15"
+}
+
+### Update a contact (Render)
+PUT https://cse341-contacts-7w4p.onrender.com/contacts/68cdb671ea447eb3f9779ba7
+Content-Type: application/json
+
+{
+  "firstName": "UpdatedFirst",
+  "lastName": "UpdatedLast",
+  "email": "updated@example.com",
+  "favoriteColor": "Green",
+  "birthday": "2000-01-01"
+}
+
+### Delete a contact (Render)
+DELETE https://cse341-contacts-7w4p.onrender.com/contacts/68cdb671ea447eb3f9779ba7
